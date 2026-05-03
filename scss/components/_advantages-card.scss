@@ -1,0 +1,20 @@
+.advantages-card {
+  max-width: 316px;
+  width: 100%;
+  max-height: 181px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 16px;
+  background-color: var(--background-color);
+  box-shadow: 0px 4px 4px 0px rgba(168, 198, 245, 0.38);
+  padding: 24px;
+
+  &__text {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+  }
+}

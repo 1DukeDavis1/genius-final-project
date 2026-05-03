@@ -1,0 +1,39 @@
+.order-button {
+  color: var(--background-color);
+  background-color: var(--color-brand);
+  padding: 16px 24px;
+  font-size: 18px;
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 16px 24px;
+  }
+
+  &:hover {
+    color: var(--color-brand);
+    background-color: transparent;
+  }
+}
+
+.callback-button {
+  color: var(--background-color);
+  background-color: var(--color-brand);
+  padding: 16px 32px;
+  font-size: 18px;
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  font-weight: 600;
+  cursor: pointer;
+  line-height: 1;
+  margin-bottom: 14px;
+
+  &:hover {
+    color: var(--color-brand);
+    background-color: transparent;
+  }
+}

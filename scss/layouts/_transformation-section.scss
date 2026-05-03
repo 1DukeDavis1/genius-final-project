@@ -1,0 +1,117 @@
+.transformation-section {
+  padding: 63px 0 128px 0;
+  position: relative;
+  overflow: visible;
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 32px;
+    position: relative;
+  }
+
+  &__content {
+    max-width: 710px;
+  }
+
+  &__title {
+    color: var(--primary-color);
+    font-family: var(--secondary-font-family);
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 100%;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 64px;
+      font-weight: 700;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 22px;
+    }
+  }
+
+  &__images {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      position: relative;
+      max-width: 499px;
+      width: 100%;
+    }
+  }
+
+  &__images img {
+    width: 100%;
+    max-width: 344px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  &__images img:nth-child(2) {
+    align-self: flex-end;
+  }
+}
+
+.decor {
+  &__star {
+    display: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      animation: decor-spin 4s linear infinite;
+    }
+
+    &--large {
+      width: 64px;
+      height: 64px;
+      background-image: url('../images/star-1.svg');
+      top: 360px;
+      left: 860px;
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+        top: 360px;
+        left: 860px;
+      }
+    }
+
+    &--medium {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/star-2.svg');
+      top: 30px;
+      left: 1200px;
+    }
+
+    &--small {
+      width: 16px;
+      height: 16px;
+      background-image: url('../images/star-3.svg');
+      top: 270px;
+      left: 1200px;
+    }
+  }
+}
+
+@keyframes decor-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

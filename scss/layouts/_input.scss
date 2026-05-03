@@ -1,0 +1,39 @@
+.input {
+  position: relative;
+  margin-bottom: 24px;
+
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 32px;
+  }
+
+  &__control {
+    width: 100%;
+    height: 52px;
+    padding: 18px 32px;
+    border: 2px solid var(--privacy-color);
+    border-radius: 32px;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:focus {
+      background-color: var(--privacy-color);
+      outline: none;
+      color: var(--background-color);
+    }
+
+    &::placeholder {
+      color: var(--background-color);
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
+}

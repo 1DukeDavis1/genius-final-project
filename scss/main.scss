@@ -1,0 +1,27 @@
+@import './utils/fonts';
+@import './utils/variables';
+@import './base';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/mixins';
+
+@import './components/advantages-card';
+@import './components/buttons';
+@import './components/carousel';
+@import './components/links';
+@import './components/pagination';
+@import './components/procedures-card';
+@import './components/terms';
+
+@import './layouts/advantages-section';
+@import './layouts/container';
+@import './layouts/footer';
+@import './layouts/input';
+@import './layouts/header';
+@import './layouts/hero-section';
+@import './layouts/map-section';
+@import './layouts/mobile-menu';
+@import './layouts/modal';
+@import './layouts/procedures-section';
+@import './layouts/section';
+@import './layouts/transformation-section';
