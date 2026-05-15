@@ -19,13 +19,13 @@
   }
 
   &__contact-map {
-    flex: 1;
     height: 232px;
     flex-shrink: 0;
     margin: 0 -24px;
     border: none;
 
     @media screen and (min-width: $bp-tablet) {
+      flex: 1;
       display: block;
       margin: auto;
       border-radius: 32px;
@@ -65,7 +65,7 @@
   &__contact-form {
     display: flex;
     flex: 1;
-    padding: 24px 42px;
+    padding: 42px 24px;
     min-width: 320px;
     text-align: center;
     align-items: center;

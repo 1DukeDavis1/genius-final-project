@@ -1,11 +1,15 @@
 .advantages-section {
   &__wave {
     background: url(../images/advantages-wave.png);
-    background-position: top center;
+    background-position: 45% top;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: -180px;
     padding-top: 180px;
+
+    @media screen and (min-width: $bp-desktop) {
+      background-size: 100% 100%;
+    }
   }
 
   &__title {
